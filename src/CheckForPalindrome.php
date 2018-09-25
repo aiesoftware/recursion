@@ -5,8 +5,6 @@ namespace AIE\Recursion;
 class CheckForPalindrome
 {
     /**
-     * Given a string of 'dad', I want to reverse it, and then see if the reverse === original.
-     *
      * @param $string
      * @return bool
      */
@@ -18,8 +16,6 @@ class CheckForPalindrome
     }
 
     /**
-     * Build a new string by plucking each character and appending to new string
-     *
      * @param $string
      * @return string
      */

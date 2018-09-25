@@ -25,24 +25,11 @@ class ReverseString
      *      So now that we have remembered this, we want a way to make 'x' the "first" result, then 'e', etc
      *      We do this by chipping away at the string from the FRONT, until we get to the final 'x'
      *
-     * We know that when we do that "something" we want to establish a "result":
-     * When we have that "result" we want to do something with it against the "previous result"
-     *
      * @param $string
      * @return string
      */
     public function reverse($string)
     {
-        // Assume every iteration will be handled for us
-        // So on the very last call, what would we want?
-        // We want to put the first element on the end of the rest
-        // it is the first, because on each iteration the first item will be different,
-        // because on each iteration we are passing in the string with the previous first character being removed
-        // i.e we are shortening the string
-        // So on every iteration, what do we want to do, or what do we want to extract, from our input
-        // in the case of reversing, we just want to get the first character in the string, before it is plucked off
-        // so in that case, we return the recursive function call PLUS the thing we care about, in this case, the 1st char
-
         if (strlen($string) < 2) {
             return $string;
         }

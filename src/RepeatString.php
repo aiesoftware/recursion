@@ -30,7 +30,7 @@ class RepeatString
      * Remember that nothing gets returned until the recursion has reached the final execution.
      * The return result is the result of a function, which is the result of a function, which is the result of a function..
      * It will go all the way down the stack until it finally reaches the break condition and returns a literal value
-     * When this happens, we have no returned 'A'. It then goes back up the chain, recalling the result of each iteration:
+     * When this happens, we have now returned 'A'. It then goes back up the chain, recalling the result of each iteration:
      * 1: determines 'A'
      * 2: determines 'Bb'
      * 3: determines 'Ccc'
